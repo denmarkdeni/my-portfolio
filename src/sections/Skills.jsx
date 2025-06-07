@@ -1,0 +1,38 @@
+import React from 'react';
+import { FaPython, FaReact, FaHtml5, FaCss3Alt, FaGithub, FaDocker } from 'react-icons/fa';
+import { SiDjango, SiTailwindcss, SiJavascript, SiMongodb, SiSqlite } from 'react-icons/si';
+
+const Skills = () => {
+  return (
+    <section className="bg-gray-100 py-12 px-4" id="skills">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-8">Skills & Technologies</h2>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
+          {/* Each skill item */}
+          <SkillItem icon={<FaPython size={40} />} label="Python" />
+          <SkillItem icon={<SiDjango size={40} />} label="Django" />
+          <SkillItem icon={<FaReact size={40} />} label="React" />
+          <SkillItem icon={<SiTailwindcss size={40} />} label="Tailwind CSS" />
+          <SkillItem icon={<SiJavascript size={40} />} label="JavaScript" />
+          <SkillItem icon={<FaHtml5 size={40} />} label="HTML5" />
+          <SkillItem icon={<FaCss3Alt size={40} />} label="CSS3" />
+          <SkillItem icon={<SiSqlite size={40} />} label="SQLite" />
+          <SkillItem icon={<SiMongodb size={40} />} label="MongoDB" />
+          <SkillItem icon={<FaDocker size={40} />} label="Docker" />
+          <SkillItem icon={<FaGithub size={40} />} label="GitHub" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// Subcomponent for each skill badge
+const SkillItem = ({ icon, label }) => (
+  <div className="flex flex-col items-center">
+    <div className="text-blue-600 mb-2">{icon}</div>
+    <p className="text-gray-700 font-medium">{label}</p>
+  </div>
+);
+
+export default Skills;
