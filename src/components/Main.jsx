@@ -8,6 +8,7 @@ import Projects from '../sections/Projects'
 import Education from '../sections/Education'
 import Contact from '../sections/Contact'
 import SocialLinks from "../sections/SocialLinks";
+import CertificateCarousel from "../sections/Certifications";
 
 const Main = () => {
   return (
@@ -18,6 +19,7 @@ const Main = () => {
       <Skills />
       <Experience />
       <Education />
+      <CertificateCarousel />
       <Contact />
       <SocialLinks />
     </>
