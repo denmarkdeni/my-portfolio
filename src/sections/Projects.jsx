@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const projectData = [
   {
@@ -92,18 +92,24 @@ const projectData = [
 ];
 
 const Projects = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleProjects = showAll ? projectData : projectData.slice(0, 3);
+
   return (
     <section className="bg-gray-100 py-12 px-4" id="projects">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">Projects</h2>
 
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-          {projectData.map((project, index) => (
+          {visibleProjects.map((project, index) => (
             <div
               key={index}
               className="bg-white rounded-xl shadow-md p-6 text-left hover:shadow-xl transition-all duration-300"
             >
-              <h3 className="text-xl font-semibold mb-2 text-blue-600">{project.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-blue-600">
+                {project.title}
+              </h3>
               <p className="text-gray-700 mb-3">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((techItem, i) => (
@@ -126,9 +132,22 @@ const Projects = () => {
             </div>
           ))}
         </div>
+
+        {/* Show More / Less Button */}
+        {projectData.length > 3 && (
+          <div className="mt-10">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+            >
+              {showAll ? 'Show Less' : 'See My 8 More Projects '}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
 };
 
 export default Projects;
+

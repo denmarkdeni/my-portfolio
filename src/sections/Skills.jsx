@@ -30,8 +30,8 @@ const Skills = () => {
 // Subcomponent for each skill badge
 const SkillItem = ({ icon, label }) => (
   <div className="flex flex-col items-center">
-    <div className="text-blue-600 mb-2">{icon}</div>
-    <p className="text-gray-700 font-medium">{label}</p>
+    <div className="text-blue-500 mb-2 hover:text-blue-950 ">{icon}</div>
+    <p className="text-gray-500 font-medium hover:text-blue-950">{label}</p>
   </div>
 );
 

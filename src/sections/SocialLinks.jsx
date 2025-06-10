@@ -13,57 +13,57 @@ import { SiLeetcode, SiGmail, SiSololearn, SiGeeksforgeeks } from 'react-icons/s
 const socialLinks = [
   {
     icon: <FaGithub />,
-    link: 'https://github.com/denny',
+    link: 'https://github.com/denmarkdeni',
     label: 'GitHub',
   },
   {
     icon: <FaLinkedin />,
-    link: 'https://linkedin.com/in/denny',
+    link: 'https://www.linkedin.com/in/maria-deniston/',
     label: 'LinkedIn',
   },
   {
     icon: <FaTwitter />,
-    link: 'https://twitter.com/denny',
+    link: 'https://x.com/Deniston003',
     label: 'Twitter',
   },
   {
     icon: <FaInstagram />,
-    link: 'https://instagram.com/denny',
+    link: 'https://www.instagram.com/maria.deniston',
     label: 'Instagram',
   },
   {
     icon: <FaReddit />,
-    link: 'https://reddit.com/user/denny',
+    link: 'https://www.reddit.com/user/denmark_019/',
     label: 'Reddit',
   },
   {
     icon: <FaHackerrank />,
-    link: 'https://www.hackerrank.com/denny',
+    link: 'https://www.hackerrank.com/profile/mariadeniston111',
     label: 'HackerRank',
   },
   {
     icon: <SiLeetcode />,
-    link: 'https://leetcode.com/denny',
+    link: 'https://leetcode.com/u/denmarkdeni/',
     label: 'LeetCode',
   },
   {
     icon: <FaStackOverflow />,
-    link: 'https://stackoverflow.com/users/denny',
+    link: 'https://stackoverflow.com/users/29881014/maria-deniston',
     label: 'Stack Overflow',
   },
   {
     icon: <SiSololearn />,
-    link: 'https://www.sololearn.com/profile/denny',
+    link: 'https://www.sololearn.com/en/profile/33061963',
     label: 'SoloLearn',
   },
   {
     icon: <SiGeeksforgeeks />,
-    link: 'https://auth.geeksforgeeks.org/user/denny',
+    link: 'https://www.geeksforgeeks.org/user/mariadenie7n5/',
     label: 'GeeksforGeeks',
   },
   {
     icon: <SiGmail />,
-    link: 'mailto:denny@example.com',
+    link: 'mailto:mariadeniston111@gmail.com',
     label: 'Gmail',
   },
 ];

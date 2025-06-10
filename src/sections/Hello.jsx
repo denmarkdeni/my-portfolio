@@ -2,7 +2,7 @@ import React from "react";
 
 const Hello = () => {
   return (
-    <main className="w-full h-screen bg-gray-100 flex items-center justify-center px-4">
+    <main id="hello" className="w-full h-screen bg-gray-100 flex items-center justify-center px-4">
       <div className="text-center max-w-2xl">
         <img
           src="/deni_logo.png"
