@@ -4,12 +4,11 @@ import { SiDjango, SiTailwindcss, SiJavascript, SiMongodb, SiSqlite } from 'reac
 
 const Skills = () => {
   return (
-    <section className="bg-gray-100 py-12 px-4" id="skills">
+    <section className="py-12 px-4" id="skills">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8">Skills & Technologies</h2>
+        <h2 className="text-3xl font-bold mb-8 text-[#22D3EE]">Skills & Technologies</h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
-          {/* Each skill item */}
           <SkillItem icon={<FaPython size={40} />} label="Python" />
           <SkillItem icon={<SiDjango size={40} />} label="Django" />
           <SkillItem icon={<FaReact size={40} />} label="React" />
@@ -27,11 +26,10 @@ const Skills = () => {
   );
 };
 
-// Subcomponent for each skill badge
 const SkillItem = ({ icon, label }) => (
   <div className="flex flex-col items-center">
-    <div className="text-blue-500 mb-2 hover:text-blue-950 ">{icon}</div>
-    <p className="text-gray-500 font-medium hover:text-blue-950">{label}</p>
+    <div className="text-[#22D3EE] mb-2 hover:text-[#1E3A8A] transition duration-300">{icon}</div>
+    <p className="text-[#F5F5F5] font-medium hover:text-[#22D3EE] transition duration-300">{label}</p>
   </div>
 );
 

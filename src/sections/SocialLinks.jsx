@@ -70,19 +70,19 @@ const socialLinks = [
 
 const SocialLinks = () => {
   return (
-    <section className="bg-white py-12 px-4" id="socials">
+    <section className="py-12 px-4" id="socials">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8">Connect with Me</h2>
-        <p className="text-gray-600 mb-6">Let’s build something great together 🚀</p>
+        <h2 className="text-3xl font-bold mb-8 text-[#22D3EE]">Connect with Me</h2>
+        <p className="text-[#F5F5F5] mb-6">Let’s build something great together 🚀</p>
 
-        <div className="flex flex-wrap justify-center gap-6 text-3xl text-blue-600">
+        <div className="flex flex-wrap justify-center gap-6 text-3xl text-[#22D3EE]">
           {socialLinks.map((social, index) => (
             <a
               key={index}
               href={social.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-800 transition-transform transform hover:scale-125"
+              className="hover:text-[#FFF] transition-transform transform hover:scale-125"
               title={social.label}
             >
               {social.icon}
