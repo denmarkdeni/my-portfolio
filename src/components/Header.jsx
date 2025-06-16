@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 bg-[#1E3A8A] bg-opacity-80 backdrop-blur-sm text-[#F5F5F5] shadow-lg transition-transform duration-700 ease-in-out ${
+      className={`fixed top-0 w-full z-50 bg-[#1E3A8A00] bg-opacity-80 backdrop-blur-sm text-[#F5F5F5] shadow-lg transition-transform duration-700 ease-in-out ${
         animateHeader ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
@@ -23,10 +23,10 @@ const Header = () => {
         </h1>
 
         <nav className="hidden md:flex space-x-6">
-          <a href="#hello" className="hover:text-[#22D3EE] transition duration-300">Home</a>
-          <a href="#about" className="hover:text-[#22D3EE] transition duration-300">About</a>
-          <a href="#projects" className="hover:text-[#22D3EE] transition duration-300">Projects</a>
-          <a href="#contact" className="hover:text-[#22D3EE] transition duration-300">Contact</a>
+          <a href="#hello" className="hover:text-[#22D3EE] transition duration-300 hover:scale-110">Home</a>
+          <a href="#about" className="hover:text-[#22D3EE] transition duration-300 hover:scale-110">About</a>
+          <a href="#projects" className="hover:text-[#22D3EE] transition duration-300 hover:scale-110">Projects</a>
+          <a href="#contact" className="hover:text-[#22D3EE] transition duration-300 hover:scale-110">Contact</a>
         </nav>
 
         <div className="md:hidden">
@@ -37,7 +37,7 @@ const Header = () => {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-[#1E3A8A] bg-opacity-80 backdrop-blur-sm px-6 py-4 space-y-4 text-center text-[#F5F5F5] animate-fade-in">
+        <div className="md:hidden bg-[#1E3A8A00] bg-opacity-80 backdrop-blur-sm px-6 py-4 space-y-4 text-center text-[#F5F5F5] animate-fade-in">
           <a href="#hello" className="block hover:text-[#22D3EE] transition duration-300" onClick={toggleMenu}>Home</a>
           <a href="#about" className="block hover:text-[#22D3EE] transition duration-300" onClick={toggleMenu}>About</a>
           <a href="#projects" className="block hover:text-[#22D3EE] transition duration-300" onClick={toggleMenu}>Projects</a>

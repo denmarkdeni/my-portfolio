@@ -50,7 +50,7 @@ function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-[#1E3A8A]">
+    <div className="relative min-h-screen bg-[#000]">
       <canvas ref={canvasRef} className="fixed inset-0 z-0" />
       <div className="relative z-10 flex flex-col min-h-screen">
         <Header />

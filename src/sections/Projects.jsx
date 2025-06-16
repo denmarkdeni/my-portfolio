@@ -105,7 +105,7 @@ const Projects = () => {
           {visibleProjects.map((project, index) => (
             <div
               key={index}
-              className="bg-[#3770c8] bg-opacity-10 rounded-xl shadow-lg p-6 text-left hover:shadow-xl transition-all duration-300"
+              className="bg-[#3770c82e] bg-opacity-10 rounded-xl shadow-lg p-6 text-left hover:shadow-xl transition-all duration-300"
             >
               <h3 className="text-xl font-semibold mb-2 text-[#22D3EE]">
                 {project.title}
@@ -125,7 +125,7 @@ const Projects = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-[#3770c8] hover:text-[#1E3A8A] hover:underline transition duration-300"
+                className="text-sm text-[#22D3EE] hover:text-[#3770c8] hover:underline transition duration-300"
               >
                 View Project →
               </a>

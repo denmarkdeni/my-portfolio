@@ -22,7 +22,7 @@ const Contact = () => {
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8 text-[#22D3EE]">Get in Touch</h2>
 
-        <div className="bg-[#3770c8] bg-opacity-90 p-8 rounded-xl shadow-lg">
+        <div className="bg-[#3770c82e] bg-opacity-90 p-8 rounded-xl shadow-lg">
           <input
             type="text"
             name="name"

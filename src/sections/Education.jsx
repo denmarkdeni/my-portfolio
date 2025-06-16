@@ -25,7 +25,7 @@ const Education = () => {
           {educationData.map((item, index) => (
             <div
               key={index}
-              className="border-l-4 border-[#22D3EE] pl-6 py-4 bg-[#3770c8] bg-opacity-90 rounded shadow-lg"
+              className="border-l-4 border-[#22D3EE] pl-6 py-4 bg-[#3770c82e] bg-opacity-90 rounded shadow-lg"
             >
               <h3 className="text-xl font-semibold text-[#22D3EE]">{item.degree}</h3>
               <p className="text-sm text-[#CCC]">
